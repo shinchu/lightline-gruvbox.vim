@@ -2,12 +2,12 @@
 " License: MIT License
 
 " Color palette from gruvbox
-let s:mono0   = '#1d1f21'
-let s:mono1   = '#282a2e'
-let s:mono2   = '#303030'
-let s:mono3   = '#373b41'
-let s:mono4   = '#707880'
-let s:mono5   = '#c5c8c6'
+let s:mono0   = '#282828'
+let s:mono1   = '#3c3836'
+let s:mono2   = '#504945'
+let s:mono3   = '#665c54'
+let s:mono4   = '#7c6f64'
+let s:mono5   = '#928374'
 let s:c_mono0 = 234
 let s:c_mono1 = 0
 let s:c_mono2 = 236
