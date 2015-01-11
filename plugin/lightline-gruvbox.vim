@@ -1,28 +1,55 @@
-" Author: shinchu
-" License: MIT License
+" File: lightline-gruvbox.vim
+" Description: lightline.vim theme for gruvbox color scheme
+" Author: shinchu <shinchu@outlook.com>
+" Source: https://github.com/shinchu/lightline-gruvbox
 
-" Color palette from gruvbox
-let s:mono0   = '#282828'
-let s:mono1   = '#3c3836'
-let s:mono2   = '#504945'
-let s:mono3   = '#665c54'
-let s:mono4   = '#7c6f64'
-let s:mono5   = '#928374'
-let s:c_mono0 = 234
-let s:c_mono1 = 0
-let s:c_mono2 = 236
-let s:c_mono3 = 8
-let s:c_mono4 = 7
-let s:c_mono5 = 15
+let s:is_dark=(&background == 'dark')
 
-let s:red      = '#fb4934'
-let s:green    = '#b8bb26'
-let s:blue     = '#83a598'
-let s:orange   = '#fe8019'
-let s:c_red    = 9
-let s:c_green  = 10
-let s:c_blue   = 12
-let s:c_orange = 3
+if s:is_dark
+	let s:mono0   = '#282828'
+	let s:mono1   = '#3c3836'
+	let s:mono2   = '#504945'
+	let s:mono3   = '#665c54'
+	let s:mono4   = '#7c6f64'
+	let s:mono5   = '#928374'
+	let s:c_mono0 = 234
+	let s:c_mono1 = 0
+	let s:c_mono2 = 236
+	let s:c_mono3 = 8
+	let s:c_mono4 = 7
+	let s:c_mono5 = 15
+
+	let s:red      = '#fb4934'
+	let s:green    = '#b8bb26'
+	let s:blue     = '#83a598'
+	let s:orange   = '#fe8019'
+	let s:c_red    = 9
+	let s:c_green  = 10
+	let s:c_blue   = 12
+	let s:c_orange = 3
+else
+	let s:mono0   = '#fbf1c7'
+	let s:mono1   = '#ebdbb2'
+	let s:mono2   = '#d5c4a1'
+	let s:mono3   = '#bdae93'
+	let s:mono4   = '#a89984'
+	let s:mono5   = '#928374'
+	let s:c_mono0 = 234
+	let s:c_mono1 = 0
+	let s:c_mono2 = 236
+	let s:c_mono3 = 8
+	let s:c_mono4 = 7
+	let s:c_mono5 = 15
+
+	let s:red      = '#9d0006'
+	let s:green    = '#79740e'
+	let s:blue     = '#076678'
+	let s:orange   = '#af3a03'
+	let s:c_red    = 9
+	let s:c_green  = 10
+	let s:c_blue   = 12
+	let s:c_orange = 3
+endif
 
 let s:p = {
 			\ 'normal':   {},
@@ -36,7 +63,6 @@ let s:style = exists('g:lightline_gruvbox_style')
 			\ ? g:lightline_gruvbox_style
 			\ : ''
 
-" [[guifg, guibg, ctermfg, ctermbg], ...]
 if s:style == 'plain'
 	let s:p.normal.middle = [
 				\ [s:mono3, s:mono4, s:c_mono3, s:c_mono4]]
