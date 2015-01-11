@@ -3,7 +3,7 @@ lightline-gruvbox
 
 Overview
 -----------------
-lightline-gruvbox is a [lightline.vim](http://github.com/itchyny/lightline.vim) theme for the fantastic [gruvbox](http://github.com/morhetz/gruvbox) color sheme, heavily inspired by [lightline-hybrid](http://github.com/cocopon/lightline-hybrid.vim).
+lightline-gruvbox is a [lightline.vim](https://github.com/itchyny/lightline.vim) theme for the fantastic [gruvbox](https://github.com/morhetz/gruvbox) color sheme, heavily inspired by [lightline-hybrid](https://github.com/cocopon/lightline-hybrid.vim).
 
 Usage
 ----------------
@@ -23,7 +23,7 @@ let g:lightline.colorscheme = 'gruvbox'
 Screenshots
 ----------------
 ### Dark
-![]()
+![dark](https://raw.githubusercontent.com/shinchu/images/master/lightline-gruvbox/dark.png)
 
 ### Light
-![]()
+![light](https://raw.githubusercontent.com/shinchu/images/master/lightline-gruvbox/light.png)
