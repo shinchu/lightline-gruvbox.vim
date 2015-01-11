@@ -1,5 +1,5 @@
 " File: lightline-gruvbox.vim
-" Description: lightline.vim theme for gruvbox color scheme
+" Description: lightline.vim theme for gruvbox colorscheme
 " Author: shinchu <shinchu@outlook.com>
 " Source: https://github.com/shinchu/lightline-gruvbox
 
