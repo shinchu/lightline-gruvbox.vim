@@ -5,7 +5,7 @@ Overview
 -----------------
 lightline-gruvbox is a [lightline.vim](https://github.com/itchyny/lightline.vim) theme for the fantastic [gruvbox](https://github.com/morhetz/gruvbox) color sheme, heavily inspired by [lightline-hybrid](https://github.com/cocopon/lightline-hybrid.vim).
 
-Usage
+Installation
 ----------------
 Use your favourite plugin manager.
 ```vim
