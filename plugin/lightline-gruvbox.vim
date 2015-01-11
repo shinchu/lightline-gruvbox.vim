@@ -4,7 +4,6 @@
 " Source: https://github.com/shinchu/lightline-gruvbox
 
 let s:is_dark=(&background == 'dark')
-let s:is_light=(&background == 'light')
 
 if s:is_dark
 	let s:mono0   = '#282828'
@@ -28,7 +27,7 @@ if s:is_dark
 	let s:c_green  = 10
 	let s:c_blue   = 12
 	let s:c_orange = 3
-elseif s:is_light
+else
 	let s:mono0   = '#fbf1c7'
 	let s:mono1   = '#ebdbb2'
 	let s:mono2   = '#d5c4a1'
