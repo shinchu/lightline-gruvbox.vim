@@ -106,11 +106,11 @@ if s:style == 'plain'
 	let s:p.tabline.middle = [
 				\ [s:mono0, s:mono5, s:c_mono0, s:c_mono5]]
 	let s:p.tabline.right = [
-				\ [s:mono0, s:mono5, s:c_mono0, s:c_mono2]]
+				\ [s:mono0, s:mono5, s:c_mono0, s:c_mono5]]
 	let s:p.tabline.left = [
 				\ [s:mono0, s:mono5, s:c_mono0, s:c_mono5]]
 	let s:p.tabline.tabsel = [
-				\ [s:mono0, s:mono5, s:c_mono0, s:c_mono5]]
+				\ [s:mono0, s:mono4, s:c_mono0, s:c_mono4]]
 else
 	let s:p.tabline.middle = [
 				\ [s:mono0, s:mono4, s:c_mono0, s:c_mono4]]
