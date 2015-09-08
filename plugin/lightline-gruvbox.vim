@@ -5,6 +5,13 @@
 
 let s:is_dark=(&background == 'dark')
 
+if !exists('g:gruvbox_contrast_dark')
+  let g:gruvbox_contrast_dark='medium'
+endif
+if !exists('g:gruvbox_contrast_light')
+  let g:gruvbox_contrast_light='medium'
+endif
+
 if s:is_dark
 	let s:mono0   = '#282828'
 	let s:c_mono0 = 235
