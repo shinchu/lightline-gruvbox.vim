@@ -14,6 +14,7 @@ if s:is_dark
 	elseif g:gruvbox_contrast_dark == 'hard'
 		let s:mono0 = '#1d2021'
 		let s:c_mono0 = 234
+	endif
 
 	let s:mono1   = '#3c3836'
 	let s:mono2   = '#504945'
@@ -35,6 +36,7 @@ if s:is_dark
 	let s:c_blue   = 109
 	let s:c_orange = 208
 else
+
 	let s:mono0   = '#fbf4c1'
 	let s:c_mono0 = 229
 	if g:gruvbox_contrast_light == 'soft'
@@ -43,6 +45,7 @@ else
 	elseif g:gruvbox_contrast_light == 'hard'
 		let s:mono0 = '#f9f5d7'
 		let s:c_mono0 = 230
+	endif
 
 	let s:mono1   = '#ebdbb2'
 	let s:mono2   = '#d5c4a1'
