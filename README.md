@@ -9,10 +9,10 @@ Installation
 ----------------
 Use your favourite plugin manager.
 ```vim
-Plug 'shinchu/lightline-gruvbox'
+Plug 'shinchu/lightline-gruvbox.vim'
 ```
 ```vim
-NeoBundle 'shinchu/lightline-gruvbox'
+NeoBundle 'shinchu/lightline-gruvbox.vim'
 ```
 Then add the following lines to your `.vimrc`.
 ```vim
