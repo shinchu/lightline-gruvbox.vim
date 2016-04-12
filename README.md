@@ -11,10 +11,7 @@ Use your favourite plugin manager.
 ```vim
 Plug 'shinchu/lightline-gruvbox.vim'
 ```
-```vim
-NeoBundle 'shinchu/lightline-gruvbox.vim'
-```
-Then add the following lines to your `.vimrc`.
+Add the following lines to your `.vimrc`.
 ```vim
 let g:lightline = {}
 let g:lightline.colorscheme = 'gruvbox'
