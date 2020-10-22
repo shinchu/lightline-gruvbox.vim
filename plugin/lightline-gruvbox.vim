@@ -109,7 +109,7 @@ else
 					\ [s:mono5, s:mono3, s:c_mono5, s:c_mono3]]
 	endif
 	let s:p.normal.right = [
-				\ [s:mono0, s:mono4, s:c_mono0, s:c_mono4],
+				\ [s:mono0, s:green, s:c_mono0, s:c_green],
 				\ [s:mono0, s:mono4, s:c_mono0, s:c_mono4]]
 endif
 
@@ -125,12 +125,23 @@ let s:p.inactive.left = [
 let s:p.insert.left = [
 			\ [s:mono0, s:blue, s:c_mono0, s:c_blue],
 			\ s:p.normal.left[1]]
+let s:p.insert.right = [
+			\ [s:mono0, s:blue, s:c_mono0, s:c_blue],
+			\ s:p.normal.right[1]]
+
 let s:p.replace.left = [
 			\ [s:mono0, s:red, s:c_mono0, s:c_red],
 			\ s:p.normal.left[1]]
+let s:p.replace.right = [
+			\ [s:mono0, s:red, s:c_mono0, s:c_red],
+			\ s:p.normal.right[1]]
+
 let s:p.visual.left = [
 			\ [s:mono0, s:orange, s:c_mono0, s:c_orange],
 			\ s:p.normal.left[1]]
+let s:p.visual.right = [
+			\ [s:mono0, s:orange, s:c_mono0, s:c_orange],
+			\ s:p.normal.right[1]]
 
 if s:style == 'plain'
 	let s:p.tabline.middle = [
