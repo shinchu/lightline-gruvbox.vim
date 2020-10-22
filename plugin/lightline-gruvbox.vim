@@ -1,7 +1,8 @@
 " File: lightline-gruvbox.vim
 " Description: lightline.vim theme for gruvbox colorscheme
 " Author: shinchu <shinchu@outlook.com>
-" Source: https://github.com/shinchu/lightline-gruvbox
+" Contributor: oldwomanjosiah <jhilden13@gmail.com>
+" Source: https://github.com/oldwomanjosiah/lightline-gruvbox.vim
 
 let s:is_dark=(&background == 'dark')
 
