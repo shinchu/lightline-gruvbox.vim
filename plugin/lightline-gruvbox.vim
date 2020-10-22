@@ -4,6 +4,9 @@
 " Source: https://github.com/shinchu/lightline-gruvbox
 
 let s:is_dark=(&background == 'dark')
+let s:right_color = exists('g:gruvbox_lightline_color_right')
+					\ ? g:gruvbox_lightline_color_right
+					\ : 0
 
 if !exists('g:gruvbox_contrast_dark')
   let g:gruvbox_contrast_dark='medium'
@@ -108,9 +111,15 @@ else
 					\ [s:mono0, s:green, s:c_mono0, s:c_green],
 					\ [s:mono5, s:mono3, s:c_mono5, s:c_mono3]]
 	endif
-	let s:p.normal.right = [
-				\ [s:mono0, s:green, s:c_mono0, s:c_green],
-				\ [s:mono0, s:mono4, s:c_mono0, s:c_mono4]]
+	if s:right_color
+		let s:p.normal.right = [
+					\ [s:mono0, s:green, s:c_mono0, s:c_green],
+					\ [s:mono0, s:mono4, s:c_mono0, s:c_mono4]]
+	else
+		let s:p.normal.right = [
+					\ [s:mono0, s:mono4, s:c_mono0, s:c_mono4],
+					\ [s:mono0, s:mono4, s:c_mono0, s:c_mono4]]
+	endif
 endif
 
 let s:p.inactive.middle = [
@@ -125,23 +134,26 @@ let s:p.inactive.left = [
 let s:p.insert.left = [
 			\ [s:mono0, s:blue, s:c_mono0, s:c_blue],
 			\ s:p.normal.left[1]]
-let s:p.insert.right = [
-			\ [s:mono0, s:blue, s:c_mono0, s:c_blue],
-			\ s:p.normal.right[1]]
 
 let s:p.replace.left = [
 			\ [s:mono0, s:red, s:c_mono0, s:c_red],
 			\ s:p.normal.left[1]]
-let s:p.replace.right = [
-			\ [s:mono0, s:red, s:c_mono0, s:c_red],
-			\ s:p.normal.right[1]]
 
 let s:p.visual.left = [
 			\ [s:mono0, s:orange, s:c_mono0, s:c_orange],
 			\ s:p.normal.left[1]]
-let s:p.visual.right = [
-			\ [s:mono0, s:orange, s:c_mono0, s:c_orange],
-			\ s:p.normal.right[1]]
+
+if s:right_color
+	let s:p.insert.right = [
+				\ [s:mono0, s:blue, s:c_mono0, s:c_blue],
+				\ s:p.normal.right[1]]
+	let s:p.replace.right = [
+				\ [s:mono0, s:red, s:c_mono0, s:c_red],
+				\ s:p.normal.right[1]]
+	let s:p.visual.right = [
+				\ [s:mono0, s:orange, s:c_mono0, s:c_orange],
+				\ s:p.normal.right[1]]
+endif
 
 if s:style == 'plain'
 	let s:p.tabline.middle = [
