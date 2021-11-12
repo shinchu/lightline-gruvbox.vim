@@ -113,6 +113,9 @@ else
 				\ [s:mono0, s:mono4, s:c_mono0, s:c_mono4]]
 endif
 
+let s:p.normal.error = [ [s:mono0, s:red, s:c_mono0, s:c_red] ]
+let s:p.normal.warning = [ [s:mono0, s:orange, s:c_mono0, s:c_orange] ]
+
 let s:p.inactive.middle = [
 			\ [s:mono4, s:mono2, s:c_mono4, s:c_mono2]]
 let s:p.inactive.right = [
