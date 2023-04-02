@@ -21,6 +21,21 @@ let g:lightline = {}
 let g:lightline.colorscheme = 'gruvbox'
 ```
 
+Configuration
+----------------
+
+Configure bar coloring with either `left`, `right`, `both` like so
+```vim
+let g:lightline_gruvbox_color = '<coloring>'
+```
+or set to empty for no coloring. Defaults to `left`.
+
+Configure the style with `hard`, or `plain` (depricated) like so
+```vim
+let g:lightline_gruvbox_style = '<style>'
+```
+Defaults to neither
+
 Screenshots
 ----------------
 ### Dark
