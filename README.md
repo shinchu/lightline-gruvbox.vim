@@ -34,7 +34,7 @@ Configure the style with `hard`, or `plain` (depricated) like so
 ```vim
 let g:lightline_gruvbox_style = '<style>'
 ```
-Defaults to neither
+Defaults to neither.
 
 Screenshots
 ----------------
