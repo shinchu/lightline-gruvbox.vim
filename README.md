@@ -3,7 +3,7 @@ lightline-gruvbox
 
 Note
 -----------------
-Since there is a lightline theme included in [gruvbox](https://github.com/gruvbox-community/gruvbox/tree/50e0a8227826418b9e94281ef3abaffd82041f24) now, this plugin will remain here but most likely will not be updated.
+Since there is a lightline theme included in [gruvbox](https://github.com/gruvbox-community/gruvbox/tree/50e0a8227826418b9e94281ef3abaffd82041f24) now, this plugin will remain here but most likely will not be updated anymore.
 
 Overview
 -----------------
